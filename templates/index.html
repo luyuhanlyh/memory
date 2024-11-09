@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>我们的纪念日</title>
+</head>
+<body>
+    <div class="container">
+        <h1>我们的纪念日</h1>
+        <div class="info">
+            <p>我们已经在一起：<span id="days-together"></span>天</p>
+            <p>我们的火花已经有：<span id="days-since-special"></span>天</p>
+            <p>离在一起第 <span id="next-100-days-count"></span> 天还有：<span id="next-100-days"></span></p>
+            <p>离在一起第 <span id="next-anniversary-count"></span> 周年还有：<span id="next-anniversary"></span></p>
+            <p>离我们的火花第 <span id="next-100-special-days-count"></span> 天还有：<span id="next-100-special-days"></span></p>
+            <p>离我们的火花第 <span id="next-special-anniversary-count"></span> 周年还有：<span id="next-special-anniversary"></span></p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/countdown.js') }}"></script>
+</body>
+</html>
